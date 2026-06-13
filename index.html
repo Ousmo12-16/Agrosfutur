@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroFutur — Produits & Matériaux Agricoles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="logo">🌱 Agro<span>Futur</span></div>
+  <nav>
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#produits">Produits</a></li>
+      <li><a href="#materiaux">Matériaux</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#avis">Avis</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div style="display:flex; gap:14px; align-items:center;">
+    <a href="login.html" class="btn nav-cta" style="background:transparent; border:1.5px solid var(--ochre); color:#fff; box-shadow:none;">Connexion</a>
+    <a href="signup.html" class="btn nav-cta">Créer un compte</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="accueil">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="eyebrow">Nouvelle récolte • Nouvelle technologie</span>
+    <h1>L'agriculture <em>de demain</em>, livrée aujourd'hui</h1>
+    <p>AgroFutur connecte agriculteurs, fournisseurs et passionnés autour de produits frais, de semences certifiées et de matériaux agricoles de qualité — au meilleur prix.</p>
+    <div class="hero-buttons">
+      <a href="#produits" class="btn btn-primary">🌾 Explorer les produits</a>
+      <a href="#materiaux" class="btn btn-outline">🚜 Matériaux & outils</a>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>DÉFILER</span>
+    <div class="dot"></div>
+  </div>
+</section>
+
+<!-- PRODUITS -->
+<section id="produits">
+  <div class="section-head reveal">
+    <span class="tag">Nos produits</span>
+    <h2>Du champ à votre porte</h2>
+    <p>Une sélection rigoureuse de produits agricoles frais, de semences et d'intrants, proposés par des producteurs locaux de confiance.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card reveal">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?q=80&w=800&auto=format&fit=crop')">
+        <span class="card-badge">Frais</span>
+      </div>
+      <div class="card-body">
+        <h3>Sacs de maïs jaune</h3>
+        <p>Maïs de qualité supérieure, séché et conditionné en sacs de 50 kg, idéal pour la consommation et la transformation.</p>
+        <div class="card-foot">
+          <div class="price">12 500 FCFA <span>/ sac</span></div>
+          <button class="btn-small">Ajouter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?q=80&w=800&auto=format&fit=crop')">
+        <span class="card-badge">Bio</span>
+      </div>
+      <div class="card-body">
+        <h3>Semences de tomates</h3>
+        <p>Semences certifiées à haut rendement, résistantes aux maladies, parfaites pour la culture maraîchère.</p>
+        <div class="card-foot">
+          <div class="price">2 000 FCFA <span>/ sachet</span></div>
+          <button class="btn-small">Ajouter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=800&auto=format&fit=crop')">
+        <span class="card-badge">Populaire</span>
+      </div>
+      <div class="card-body">
+        <h3>Engrais NPK 15-15-15</h3>
+        <p>Engrais minéral complet pour booster la croissance et améliorer le rendement de toutes vos cultures.</p>
+        <div class="card-foot">
+          <div class="price">18 000 FCFA <span>/ sac 50kg</span></div>
+          <button class="btn-small">Ajouter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1597362925123-77861d3fbac7?q=80&w=800&auto=format&fit=crop')">
+        <span class="card-badge">Local</span>
+      </div>
+      <div class="card-body">
+        <h3>Riz local étuvé</h3>
+        <p>Riz produit localement, étuvé selon les méthodes traditionnelles, riche en saveur et en nutriments.</p>
+        <div class="card-foot">
+          <div class="price">15 000 FCFA <span>/ sac 25kg</span></div>
+          <button class="btn-small">Ajouter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- A PROPOS / SPLIT -->
+<section id="apropos">
+  <div class="split">
+    <div class="split-img reveal" style="background-image:url('https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=1200&auto=format&fit=crop')"></div>
+    <div class="split-text reveal">
+      <span class="tag">Notre mission</span>
+      <h2>Soutenir les agriculteurs grâce à la technologie</h2>
+      <p>AgroFutur est né d'une conviction simple : les producteurs méritent un accès direct au marché, sans intermédiaires coûteux. Notre plateforme met en relation agriculteurs, coopératives et acheteurs pour des échanges plus justes et plus rapides.</p>
+      <p>Nous proposons aussi une large gamme de matériaux et d'équipements agricoles, sélectionnés pour leur durabilité et leur efficacité sur le terrain.</p>
+      <div class="stat-row">
+        <div>
+          <h3>3 200+</h3>
+          <span>Agriculteurs partenaires</span>
+        </div>
+        <div>
+          <h3>48</h3>
+          <span>Régions couvertes</span>
+        </div>
+        <div>
+          <h3>98%</h3>
+          <span>Clients satisfaits</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MATERIAUX -->
+<section id="materiaux">
+  <div class="section-head reveal">
+    <span class="tag">Équipement</span>
+    <h2>Matériaux et outils agricoles</h2>
+    <p>Des outils manuels aux machines motorisées, équipez votre exploitation avec du matériel fiable et adapté à vos besoins.</p>
+  </div>
+
+  <div class="grid" style="margin-bottom:40px;">
+    <div class="card reveal">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=800&auto=format&fit=crop')">
+        <span class="card-badge">Top vente</span>
+      </div>
+      <div class="card-body">
+        <h3>Motoculteur diesel</h3>
+        <p>Motoculteur robuste 12 CV, idéal pour le labour et le binage sur petites et moyennes parcelles.</p>
+        <div class="card-foot">
+          <div class="price">1 250 000 FCFA</div>
+          <button class="btn-small">Commander</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1581093588401-fbb62a02f120?q=80&w=800&auto=format&fit=crop')">
+        <span class="card-badge">Essentiel</span>
+      </div>
+      <div class="card-body">
+        <h3>Kit d'outils manuels</h3>
+        <p>Houe, pelle, râteau et machette — un kit complet en acier renforcé pour les travaux quotidiens.</p>
+        <div class="card-foot">
+          <div class="price">28 000 FCFA</div>
+          <button class="btn-small">Commander</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=800&auto=format&fit=crop')">
+        <span class="card-badge">Irrigation</span>
+      </div>
+      <div class="card-body">
+        <h3>Kit d'irrigation goutte-à-goutte</h3>
+        <p>Système complet pour 500 m², économise jusqu'à 60% d'eau par rapport à l'irrigation classique.</p>
+        <div class="card-foot">
+          <div class="price">95 000 FCFA</div>
+          <button class="btn-small">Commander</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner reveal">
+    <div class="banner-content">
+      <span class="tag">Offre spéciale</span>
+      <h2>Équipez votre ferme avant la saison des pluies</h2>
+      <p>Profitez de remises exclusives sur les tracteurs, pompes et systèmes d'irrigation. Livraison disponible dans toutes les régions partenaires.</p>
+      <a href="#contact" class="btn btn-primary">Demander un devis</a>
+    </div>
+  </div>
+</section>
+
+<!-- AVIS -->
+<section id="avis">
+  <div class="section-head reveal">
+    <span class="tag">Témoignages</span>
+    <h2>Ce que disent nos utilisateurs</h2>
+    <p>Des milliers d'agriculteurs et de revendeurs nous font confiance pour leurs achats et leurs ventes.</p>
+  </div>
+
+  <div class="testi-grid">
+    <div class="testi reveal">
+      <div class="stars">★★★★★</div>
+      <p>"Grâce à AgroFutur, j'ai trouvé des semences de qualité à un prix bien plus bas que sur le marché local. Livraison rapide en plus !"</p>
+      <div class="testi-user">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=200&auto=format&fit=crop" alt="">
+        <div>
+          <h4>Amadou Traoré</h4>
+          <span>Producteur de céréales</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi reveal">
+      <div class="stars">★★★★★</div>
+      <p>"J'ai acheté mon motoculteur en quelques clics. Le service client m'a accompagné jusqu'à la livraison. Très professionnel."</p>
+      <div class="testi-user">
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop" alt="">
+        <div>
+          <h4>Fatoumata Diarra</h4>
+          <span>Exploitante agricole</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi reveal">
+      <div class="stars">★★★★★</div>
+      <p>"La plateforme m'a permis de vendre directement ma récolte sans passer par des intermédiaires. Mes revenus ont augmenté !"</p>
+      <div class="testi-user">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="">
+        <div>
+          <h4>Ibrahim Coulibaly</h4>
+          <span>Coopérative agricole</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER / CONTACT -->
+<section id="contact">
+  <div class="newsletter reveal">
+    <h2>Restez informé de nos nouvelles offres</h2>
+    <p>Recevez les nouveaux produits, promotions et conseils agricoles directement dans votre boîte mail.</p>
+    <form class="news-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
+      <input type="email" placeholder="Votre adresse e-mail" required>
+      <button type="submit" class="btn btn-primary">S'abonner</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="logo">🌱 Agro<span style="color:var(--ochre)">Futur</span></div>
+      <p>La plateforme qui connecte les agriculteurs, fournisseurs et acheteurs autour de produits agricoles frais et de matériaux de qualité.</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#produits">Produits</a></li>
+        <li><a href="#materiaux">Matériaux</a></li>
+        <li><a href="#apropos">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Catégories</h4>
+      <ul>
+        <li><a href="#">Céréales</a></li>
+        <li><a href="#">Semences</a></li>
+        <li><a href="#">Engrais</a></li>
+        <li><a href="#">Machines</a></li>
+        <li><a href="#">Irrigation</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">📍 Ségou, Mali</a></li>
+        <li><a href="tel:+22300000000">📞 +223 00 00 00 00</a></li>
+        <li><a href="mailto:contact@agrofutur.com">✉️ contact@agrofutur.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 AgroFutur. Tous droits réservés.</span>
+    <span>Cultivons l'avenir, ensemble. 🌾</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

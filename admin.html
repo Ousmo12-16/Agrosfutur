@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Administration — AgroFutur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="admin-wrapper">
+
+  <header class="admin-header">
+    <div class="logo">🌱 Agro<span>Futur</span> — Admin</div>
+    <div style="display:flex; align-items:center; gap:16px;">
+      <button class="theme-toggle" id="theme-toggle" title="Changer de thème" aria-label="Changer de thème">🌙</button>
+      <span class="admin-tag" id="admin-email">...</span>
+      <button class="admin-logout" onclick="handleLogout()">Déconnexion</button>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <h1 class="admin-title">Gestion des produits</h1>
+    <p class="admin-subtitle">Ajoutez, modifiez ou supprimez les produits et matériaux affichés sur le site.</p>
+
+    <p id="admin-message" class="admin-message"></p>
+
+    <!-- FORMULAIRE -->
+    <div class="admin-card">
+      <h3 id="form-title">Ajouter un produit</h3>
+      <form id="product-form" onsubmit="handleProductSubmit(event)">
+        <div class="admin-form-grid">
+          <div>
+            <label for="p-name">Nom du produit</label>
+            <input type="text" id="p-name" placeholder="Ex : Sacs de maïs jaune" required>
+          </div>
+          <div>
+            <label for="p-category">Catégorie</label>
+            <select id="p-category" required>
+              <option value="produit">Produit agricole</option>
+              <option value="materiel">Matériel agricole</option>
+            </select>
+          </div>
+          <div>
+            <label for="p-price">Prix (FCFA)</label>
+            <input type="number" id="p-price" placeholder="Ex : 12500" min="0" step="1" required>
+          </div>
+          <div>
+            <label for="p-unit">Unité</label>
+            <input type="text" id="p-unit" placeholder="Ex : / sac, / sachet, / unité">
+          </div>
+          <div>
+            <label for="p-badge">Étiquette (badge)</label>
+            <input type="text" id="p-badge" placeholder="Ex : Frais, Bio, Top vente">
+          </div>
+          <div>
+            <label for="p-image">URL de l'image</label>
+            <input type="url" id="p-image" placeholder="https://...">
+          </div>
+          <div class="full">
+            <label for="p-description">Description</label>
+            <textarea id="p-description" placeholder="Décrivez le produit en quelques phrases"></textarea>
+          </div>
+        </div>
+        <div class="admin-actions">
+          <button type="submit" id="submit-btn" class="btn-admin-primary">Ajouter le produit</button>
+          <button type="button" id="cancel-btn" class="btn-admin-cancel" style="display:none;" onclick="resetForm()">Annuler</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- LISTE DES PRODUITS -->
+    <div class="admin-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Nom</th>
+            <th>Catégorie</th>
+            <th>Prix</th>
+            <th>Unité</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="products-tbody">
+          <tr><td colspan="6" class="empty-state">Chargement...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="auth.js"></script>
+<script src="admin.js"></script>
+<script>
+  checkAdminAccess();
+</script>
+</body>
+</html>
