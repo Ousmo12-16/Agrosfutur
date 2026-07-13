@@ -21,7 +21,7 @@
 .admin-header .logo span{color:var(--ochre);}
 .admin-header .admin-tag{
   font-size:.8rem;
-  background:rgba(255,255,255,0.12);
+  background:rgba(120,255,255,0.12);
   padding:6px 16px;
   border-radius:50px;
   font-weight:600;
